@@ -7,4 +7,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0228-summary-ranges](https://github.com/Vishal34354/LeetcodeProblems/tree/master/0228-summary-ranges) |
+## Linked List
+|  |
+| ------- |
+| [2181-merge-nodes-in-between-zeros](https://github.com/Vishal34354/LeetcodeProblems/tree/master/2181-merge-nodes-in-between-zeros) |
+## Simulation
+|  |
+| ------- |
+| [2181-merge-nodes-in-between-zeros](https://github.com/Vishal34354/LeetcodeProblems/tree/master/2181-merge-nodes-in-between-zeros) |
 <!---LeetCode Topics End-->
