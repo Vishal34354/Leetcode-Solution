@@ -1,0 +1,14 @@
+class Solution {
+public:
+    bool kLengthApart(vector<int>& nums, int k) {
+        int count = k;
+        for (int i : nums) {
+            if (i == 0) count++;
+            else {
+                if (count < k) return false;
+                count = 0;
+            }
+        }
+        return true;
+    }
+};
