@@ -1,0 +1,21 @@
+# 3476-find-minimum-operations-to-make-all-elements-divisible-by-three
+
+## Solution
+
+```cpp
+class Solution {
+public:
+    int minimumOperations(vector<int>& nums) {
+        int count=0;
+        int Amt=0;
+        for(int i=0;i<nums.size();i++){
+           count=nums[i]%3;
+           if(count==0)
+           continue;
+        else
+         Amt++;
+        }
+        return Amt;
+    }
+};
+```

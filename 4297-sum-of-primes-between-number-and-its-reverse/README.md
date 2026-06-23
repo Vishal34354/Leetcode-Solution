@@ -1,0 +1,34 @@
+# 4297-sum-of-primes-between-number-and-its-reverse
+
+## Solution
+
+```cpp
+class Solution {
+public:
+    bool isPrime(int n) {
+    if (n <= 1) return false; 
+    for (int i = 2; i <= sqrt(n); i++) {
+        if (n % i == 0) return false;
+    }
+    return true;
+}
+    int sumOfPrimesInRange(int n) {
+      int rev = 0;
+int temp=n;
+        while (n != 0) {
+            int digit = n% 10;
+            rev = rev * 10 + digit;
+            n /= 10;
+        }
+        n=temp;
+        if(n<rev)
+            swap(n,rev);
+        int sum=0;
+        for(int i=rev;i<=n;i++){
+            if(isPrime(i))
+                sum+=i;
+    }
+         return sum;
+    }
+};
+```
